@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrapper { width:100%; min-width:1210px; height:385px; background:url("../images/topBg2.png") no-repeat center 64px; }
+
+/*===顶部通栏，开始=================================*/
+.wrapper .topNav { width:1210px; height:64px; margin:0 auto; }
+.wrapper .topNav a { color:#333333; font-size:14px; }
+.wrapper .topNav  .pt14{ padding-top:14px; }
+.wrapper .topNav .pt18{ padding-top:18px; }
+.wrapper .topNav .txt { padding-top:29px; }
+.wrapper .topNav a:hover { text-decoration:underline; }
+.wrapper .topNav span { float:right; padding: 29px 18px 0px 18px;}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.page_header{
+    /*box-shadow: 0 0 4px rgba(0,0,0,.2);*/
+    z-index: 9999;
+    -webkit-transform: translateZ(0);
+}
+.page_header.firstHeader{
+    z-index: 4;
+    overflow: hidden;
+    cursor: pointer;
+}
+.page_header.secondHeader{
+    background-color: #000;
+    height: 0;
+    z-index: 3;
+    overflow: hidden;
+    transition:height 0.5s;
+    -moz-transition:height 0.5s; /* Firefox 4 */
+    -webkit-transition:height 0.5s; /* Safari and Chrome */
+    -o-transition:height 0.5s; /* Opera */
+}
+.page_header.secondHeader.open{
+    transition:height 0.5s;
+    -moz-transition:height 0.5s; /* Firefox 4 */
+    -webkit-transition:height 0.5s; /* Safari and Chrome */
+    -o-transition:height 0.5s; /* Opera */
+    height: 64px;
+}
+
+.wrapper .topNavBlack { /*height:64px; background-color:#000000;*/ }
+.wrapper .topNavBlack .topBlackNav { width:1210px; height:64px; margin:0 auto; }
+.wrapper .topNavBlack .topBlackNav a { color:#616161; font-size:14px; }
+.wrapper .topNavBlack .topBlackNav .pt14{ padding-top:14px; margin-right:42px; }
+.wrapper .topNavBlack .topBlackNav .pt18{ padding-top:18px; }
+.wrapper .topNavBlack .topBlackNav .txt { padding-top:29px; }
+.wrapper .topNavBlack .topBlackNav a:hover { color:#ffffff; text-decoration:underline; }
+.wrapper .topNavBlack .topBlackNav span { float:right; padding: 29px 18px 0px 18px; color:#ffffff;}
+.wrapper .topNavBlack .topBlackNav .seek { width:276px; height:28px; background:url("../images/seekBg2.png") no-repeat; margin: 22px 17px 0px 0px; }
+.wrapper .topNavBlack .topBlackNav .seekTxt { width:225px; height:28px; font-size:14px; margin:0px 0px 0px 16px; border:none; background:none; color:#616161; }
+.wrapper .topNavBlack .topBlackNav .seek .wh28 { width:28px; height:28px; }
+.wrapper .topNavBlack .topBlackNav .mg28 { padding-top:28px; margin-right:28px; }
+
+/*===项目介绍，开始=================================*/
+.contentIntroduce { width:1202px; height:718px; margin:15px auto 0px; }
+.contentIntroduce .txtTitle { width:150px; font-size:23px; color:#c1c1c1; margin:0 auto; }
+.contentIntroduce .gameTitleName { font-size:27px; color:#2b2b2b; margin-top:33px; }
+.contentIntroduce .wire{ width:1202px; height:1px; border-top:1px solid #e3e3e3; margin-top:8px; }
+.contentIntroduce .gameImg { margin-top:21px; }
+.contentIntroduce .gameImg .ml15 { margin-right:15px; }
+.contentIntroduce .like { width:97px; height:97px; margin:29px auto 0px; }
+.contentIntroduce .like p { color:#ff0000; margin:-32px 0px 0px 33px; }
+
+/*===评论区，开始=================================*/
+.comment { width:100%; min-width:1212px; height:100%; background-color:#f0f0f0; margin-top:21px; }
+.comment .commentContent { width:1202px; height:100%; margin:0 auto; }
+.comment .commentContent .commentTitle { width:150px; font-size:23px; color:#c1c1c1; margin:0 auto; padding-top:21px; }
+.comment .commentContent .membercCmment { font-size:20px; color:#717171; margin-top:17px; }
+.comment .commentContent .commentBox { margin-top:8px; }
+.comment .commentContent .commentBox .commentBoxInput { width:1198px; height:122px; font-size:14px; margin:0 auto; border:1px solid #bfbfbf; background-color:#ffffff; color:#b0b0b0; }
+.comment .commentContent .mt13 { margin-top:13px; }
+.comment .commentContent .userComment { margin-top:17px; padding-bottom:23px; }
+.userComment li {
+    display: block;
+    width: 100%;
+	height:auto;
+    border-bottom: 1px solid #bfbfbf;
+	background-color:#ffffff;
+    padding: 16px 0;
+    position: relative;
+}
+.userComment .recListLeft {
+    padding: 0px 24px 0px 20px;
+    width: auto;
+    float: none;
+}
+.userComment .recListLeft .recDes {
+    margin: -2px 0 0 73px;
+}
+.userComment .recListLeft .recDes .uesName {
+	color:#f62e0d; font-size:18px;
+}
+.userComment .recListLeft .recDes span { color:#b0b0b0; }
+.userComment .recListLeft .recDes .recBox {
+    height: auto;
+    padding: 9px 0 0px 0;
+    overflow: hidden;
+	font-size:16px;
+    color: #b0b0b0;
+}
+.userComment .recListLeft .recDes .reply { padding:5px 0px 0px 980px; }
+.userComment .recListLeft .recDes .reply a { color:#f62e0d; font-size:14px; }
+.userComment .recListLeft .recDes .reply a:hover { text-decoration:underline; }
+.userComment .recListLeft .recDes .reply span { color:#f62e0d; font-size:14px; }
+
+/*===推荐区，开始=================================*/
+.recommend { width:1202px; height:488px; margin:0 auto; }
+.recommend .caseTxt { width:150px; font-size:23px; color:#c1c1c1; margin:37px auto 0px; }
+.recommend .row { margin:15px 0px 0px -13px; }
+.recommend .row .element { width:404px; height:396px; background:url("../images/elementBg.png") no-repeat; float:left; }
+.recommend .row .element img { margin:10px 0px 0px 13px; }
+.recommend .row .element .gameName { margin:2px 26px 0px 32px;}
+.recommend .row .element .gameName span { margin-top:10px; font-size:16px; color:#717171; }
+.recommend .row .element .gameInfo { margin:18px 26px 0px 32px; }
+.recommend .row .element .gameInfo p {color:#bebebe}
+.recommend .row .element .gameInfo .pl { margin-right:5px}
+.recommend .row .element .gameInfo .pr { margin-left:5px}
+
+.returnTop { width:1280px; height:56px; margin:-70px; float:right; }
+
+/*===页脚，开始=================================*/
+.footer { width:100%; min-width:1212px; height:256px; background-color:#201f24; }
+.footer .footerContent { width:1212px; padding-top:54px; margin:0 auto; }
+.footer .footerContent .fl1 { width:378px; }
+.footer .footerContent .fl1 .awp { margin-left: 13px; }
+.footer .footerContent .fl1 .awptxt{ margin:25px 0px 0px 13px; color:#ffffff; }
+.footer .footerContent .fl2 { margin:18px 0px 0px 0px; color:#c6c6c6; }
+.footer .footerContent a { color:#c6c6c6; }
+.footer .footerContent a:hover { text-decoration:underline; }
+.footer .footerContent .fl2 .awp1 { }
+.footer .footerContent .fl2 .awp2 { margin-left:46px; }
+.footer .footerContent .fl2 .awp3 { margin-left:46px; }
+.footer .footerContent .fl2 .awp4 { margin-left:46px; }
+.footer .footerContent .fl2 .iconLink { margin:20px 50px 0px 0px; }
+.footer .footerContent .fl2 .iconLink a img { margin-right:10px; }
+.footer .footerContent .list { color:#c6c6c6; margin:58px 0px 0px -45px; }
+.footer .footerContent .list li { padding-bottom:18px; }
+
+.bottom { width:100%; min-width:1212px; height:51px; background-color:#17161b; }
+.bottomTxt { width:800px; color:#c6c6c6;  padding-top:24px; margin:0 auto; }

@@ -1,0 +1,455 @@
+@-webkit-keyframes dropout {
+	0% {
+		-webkit-transform: translate(0,-100%);
+	}
+	20% {
+		-webkit-transform: translate(0,0);
+	}
+	40% {
+		-webkit-transform: translate(0,-5%);
+	}
+	60% {
+		-webkit-transform: translate(0,0);
+	}	
+	80% {
+		-webkit-transform: translate(0,-2%);
+	}
+	100% {
+		-webkit-transform: translate(0,0);
+	}
+}
+
+@-webkit-keyframes slide-to-next-btn {
+	0%{
+		-webkit-transform: translate(0,30%);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0,-15%);
+	}
+}
+/*@-webkit-keyframes slide-to-next-btn {
+	0%{
+		-webkit-transform: translate(0,3%);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0,-1%);
+	}
+}*/
+@-webkit-keyframes shining {
+	0%{
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0.3;
+	}
+}
+@-webkit-keyframes leftToright {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(-100%,0); 
+	}	
+	50% {	
+		opacity: 1;
+		-webkit-transform: translate(3%,0); 
+	}
+	65% {	
+		opacity: 1;
+		-webkit-transform: translate(-1%,0); 
+	}
+	80% {	
+		opacity: 1;
+		-webkit-transform: translate(0,0); 
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0,0); 
+	}
+}
+@-webkit-keyframes rightToleft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(100%,0); 
+	}	
+	50% {	
+		opacity: 1;
+		-webkit-transform: translate(-3%,0); 
+	}
+	65% {	
+		opacity: 1;
+		-webkit-transform: translate(1%,0); 
+	}
+	80% {	
+		opacity: 1;
+		-webkit-transform: translate(0,0); 
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0,0); 
+	}
+}
+@-webkit-keyframes frombottom {
+	0% {
+		-webkit-transform: translate(0,15%);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translate(0,0);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fromleft {
+	0% {
+		-webkit-transform: translate(-100%,0);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translate(0,0);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fromright {
+	0% {
+		-webkit-transform: translate(100%,0);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translate(0,0);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes smallTobig {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0,0); 
+	}	
+	50% {	
+		opacity: 1;
+		-webkit-transform: scale(1.1,1.1); 
+	}
+	70% {	
+		opacity: 1;
+		-webkit-transform: scale(0.9,0.9); 
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1,1); 
+	}
+}
+@-webkit-keyframes bigTosmall {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(2,2); 
+	}	
+	50% {	
+		opacity: 1;
+		-webkit-transform: scale(0.9,0.9); 
+	}
+	65% {	
+		opacity: 1;
+		-webkit-transform: scale(1.05,1.05); 
+	}
+	80% {	
+		opacity: 1;
+		-webkit-transform: scale(1,1); 
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1,1); 
+	}
+}
+.p1-logo-txt {
+	-webkit-animation: dropout 1s ease 0.5s both;	
+}
+.logo {
+	-webkit-animation: dropout 1s ease both;	
+}
+.each-page-btn {
+	-webkit-animation: slide-to-next-btn 1.5s ease both infinite;	
+}
+.p1-fridge-shining {
+	-webkit-animation: shining 1.5s ease both infinite;	
+}
+.p1-fridge {
+	-webkit-animation: frombottom 0.7s ease both;	
+}
+.p1-bg-shining {
+	-webkit-animation: shining 2s ease 1s both infinite;	
+}
+.container1 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 1.4s both;	
+}
+.p1-boo {
+	-webkit-animation: frombottom 0.7s ease 0.5s both;	
+}
+.p2-tit {
+	-webkit-animation: leftToright 0.7s ease both;	
+}
+.p2-txt {
+	-webkit-animation: leftToright 0.7s ease 0.5s both;	
+}
+.p2-info {
+	-webkit-animation: rightToleft 0.7s ease 1s both;
+}
+.p3-top {
+        -webkit-animation: bigTosmall 0.7s ease 0.5s both;
+    -webkit-transform-origin: 70% 90%;
+}
+.p3-bo {
+    -webkit-animation: dropout 0.7s ease both;
+}
+.p4-tit{
+	-webkit-animation: leftToright 0.7s ease both;	
+}
+.p4-h1{
+	-webkit-animation: leftToright 0.7s ease 0.5s both;	
+}
+.p4-luxian{
+	-webkit-animation: leftToright 0.7s ease 1.0s both;	
+}
+.p4-img1 {
+	-webkit-animation: frombottom 0.7s ease 1.5s both;	
+}
+.p4-img2 {
+	-webkit-animation: frombottom 0.7s ease 1.9s both;	
+}
+.p4-img3 {
+	-webkit-animation: frombottom 0.7s ease 2.3s both;	
+}
+.p5-tit{
+	-webkit-animation: leftToright 0.7s ease both;	
+}
+.p5-luxian{
+	-webkit-animation: leftToright 0.7s ease 0.5s both;	
+}
+.p5-img1 {
+	-webkit-animation: frombottom 0.7s ease 1s both;	
+}
+.p5-img2 {
+	-webkit-animation: frombottom 0.7s ease 1.4s both;	
+}
+.p5-img3 {
+	-webkit-animation: frombottom 0.7s ease 1.8s both;	
+}
+.p6-tit{
+	-webkit-animation: leftToright 0.7s ease both;	
+}
+.p6-luxian{
+	-webkit-animation: leftToright 0.7s ease 0.5s both;	
+}
+.p6-txt{
+	-webkit-animation: leftToright 0.7s ease 1s both;	
+}
+.p6-img1 {
+	-webkit-animation: frombottom 0.7s ease 1.4s both;	
+}
+.p6-img2 {
+	-webkit-animation: frombottom 0.7s ease 1.8s both;	
+}
+.p6-img3 {
+	-webkit-animation: frombottom 0.7s ease 2.2s both;	
+}
+.p6-img4 {
+	-webkit-animation: frombottom 0.7s ease 2.6s both;	
+}
+.p7-tit{
+	-webkit-animation: leftToright 0.7s ease both;	
+}
+.p7-1 {
+	-webkit-animation: frombottom 0.7s ease 0.4s both;	
+}
+.p7-2 {
+	-webkit-animation: frombottom 0.7s ease 0.8s both;	
+}
+.p8-off {
+	-webkit-animation: rightToleft 0.7s ease 0.5s both;
+}
+.p8-1{
+	-webkit-animation: leftToright 0.7s ease both;	
+}
+.p8-2{
+	-webkit-animation: rightToleft 0.7s ease 0.3s both;	
+}
+.p8-3{
+	-webkit-animation: leftToright 0.7s ease 0.6s both;	
+}
+.p8-4{
+	-webkit-animation: rightToleft 0.7s ease 0.9s both;	
+}
+.p8-5{
+	-webkit-animation: leftToright 0.7s ease 1.2s both;	
+}
+.p9-c{
+	  -webkit-animation: dropout 0.7s ease both;
+}
+.p9-icon{
+	    -webkit-animation: dropout 0.7s ease 0.5s both;
+}
+.p9-tit{
+	-webkit-animation: leftToright 0.7s ease 0.9s both;	
+}
+
+
+
+.p2-txt1 {
+	-webkit-animation: rightToleft 0.7s ease both;	
+}
+.p2-txt2 {
+	-webkit-animation: rightToleft 0.7s ease 0.6s both;	
+}
+.p2-txt3 {
+	-webkit-animation: rightToleft 0.7s ease 1s both;	
+}
+.p2-txt4 {
+	-webkit-animation: rightToleft 0.7s ease 1.4s both;	
+}
+
+.p2-four-core-title {
+	-webkit-animation: frombottom 0.7s ease 1.8s both;	
+
+}
+.p2-four-core-1 {
+	-webkit-animation: smallTobig 0.7s ease 2s both;
+	-webkit-transform-origin: 15% 90%;	
+}
+.p2-four-core-2 {
+	-webkit-animation: smallTobig 0.7s ease 2.4s both;
+	-webkit-transform-origin: 40% 90%;	
+}
+.p2-four-core-3 {
+	-webkit-animation: smallTobig 0.7s ease 2.8s both;
+	-webkit-transform-origin: 60% 90%;	
+}
+.p2-four-core-4 {
+	-webkit-animation: smallTobig 0.7s ease 3.2s both;
+	-webkit-transform-origin: 80% 90%;	
+}
+.container2 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 3.8s both;	
+}
+.p3-fridge {
+	-webkit-animation: fromleft 0.5s ease both;	
+}
+.p3-txt5 {
+	-webkit-animation: frombottom 1s ease 1.6s both;	
+}
+.p3-txt6 {
+	-webkit-animation: bigTosmall 0.7s ease 2s both;
+	-webkit-transform-origin: 70% 90%;
+}
+.container3 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 2.4s both;	
+}
+.container4 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 3.8s both;	
+}
+.p5-fridge {
+	-webkit-animation: fromright 0.5s ease both;	
+}
+.p5-txt1 {
+	-webkit-animation: leftToright 0.7s ease 0.3s both;	
+}
+.p5-txt2 {
+	-webkit-animation: leftToright 0.7s ease 0.7s both;	
+}
+.p5-txt3 {
+	-webkit-animation: leftToright 0.7s ease 1.1s both;	
+}
+.p5-txt4 {
+	-webkit-animation: leftToright 0.7s ease 1.5s both;	
+}
+.container5 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 2s both;	
+}
+.container6 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 2s both;	
+}
+.container7 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 2s both;	
+}
+.p8-title {
+	-webkit-animation: smallTobig 0.7s ease 2s both;
+	-webkit-transform-origin: 80% 90%;	
+}
+.p8-four-core-1 {
+	-webkit-animation: smallTobig 0.7s ease 2.3s both;
+	-webkit-transform-origin: 15% 90%;	
+}
+.p8-four-core-2 {
+	-webkit-animation: smallTobig 0.7s ease 2.6s both;
+	-webkit-transform-origin: 40% 90%;	
+}
+.p8-four-core-3 {
+	-webkit-animation: smallTobig 0.7s ease 2.9s both;
+	-webkit-transform-origin: 60% 90%;	
+}
+.p8-four-core-4 {
+	-webkit-animation: smallTobig 0.7s ease 3.2s both;
+	-webkit-transform-origin: 80% 90%;	
+}
+.container8 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 4s both;	
+}
+.p9-txt4 {
+	-webkit-animation: frombottom 0.7s ease 1.2s both;	
+}
+.container9 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 1.8s both;	
+}
+.container10 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 1.8s both;	
+}
+.container11 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 1.8s both;	
+}
+.container12 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 2.4s both;	
+}
+.p13-txt5 {
+	-webkit-animation: frombottom 0.7s ease 1.8s both;	
+}
+.container13 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 2.4s both;	
+}
+.container14 .each-page-btn img {
+	-webkit-animation: fadein 1s ease 2.4s both;	
+}
+.p15-txt1 {
+	-webkit-animation: smallTobig 0.7s ease both;	
+}
+.p15-txt2 {
+	-webkit-animation: frombottom 0.7s ease 0.4s both;	
+}
+.p15-fridge {
+	-webkit-animation: fromleft 0.7s ease 0.7s both;	
+}
+.p15-txt3 {
+	-webkit-animation: rightToleft 0.7s ease 0.8s both;	
+}
+.p15-txt4 {
+	-webkit-animation: rightToleft 0.7s ease 1.2s both;	
+}
+.p15-txt5 {
+	-webkit-animation: rightToleft 0.7s ease 1.6s both;	
+}
+.p15-txt6 {
+	-webkit-animation: frombottom 0.7s ease 1.9s both;	
+}
+.p15-btn {
+	-webkit-animation: smallTobig 0.7s ease 2.2s both;
+	-webkit-transform-origin: 50% 90%;		
+}

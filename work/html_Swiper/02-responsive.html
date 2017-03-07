@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	.fl { float:left; }
+	.fr { float:right; }
+	.clear { clear:both; font-size:0px; height:0px; }
+	.pn { display:block; margin:0; padding:0; font-size:0px; }
+	.p4 {}
+	.p4Cont { height:100%; }
+	.p1Cont { width:640px; height:100%; background-color:#a81c3b; }
+	.p1Cont .tab { width:622px; height:886px; margin:auto 10px; }
+	.p1Cont p { padding:10px 0px 0px 25px; color:#ffffff; font-size:15px;}
+	.p1Cont .tab table { border-collapse:collapse; border-spacing:0px 0px; }
+	.p1Cont .tab .table { width:614px; height:805px; margin:0px 3px; background-color:#ffd08a; }
+	.mt112 { height:112px; margin:0; padding:0; }
+	.p1Cont .tab .table th { width:61px; height:66px; }
+	.p1Cont .tab .table td { width:61px; height:40px; }
+	.ff6600 { background-color:#ff6600; }
+	.fe4600 { background-color:#fe4600; }
+	.ff9900 { background-color:#ff9900; }
+	.fff6e7 { background-color:#fff6e7; }
+	.ffffff { background-color:#ffffff; }
+	.ebebeb { background-color:#ebebeb; }
+	.mt6 { padding:0; margin-top:6px; height:40px; width:61px; }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(images/img1.jpg)">
+            	<!-- <img src="images/img1.jpg" width="100%" height="100%"/>-->
+            </div>
+            <div class="swiper-slide pn">
+            	<div><img src="images/topImg.jpg" width="640" height="226"/></div>
+                <div class="p1Cont">
+                	<div class="tab" style="background-image:url(images/tabBg.png)">
+                    	<p class="mt112"></p>
+                    	<table class="table" cellspacing="0">
+							<thead>
+								<tr>
+									<th class="ff6600"></th>
+									<th class="fe4600"> </th>
+									<th class="ff6600"></th>
+									<th class="fe4600"> </th>
+                                    <th class="ff6600"></th>
+									<th class="fe4600"> </th>
+                                    <th class="ff6600"></th>
+									<th class="fe4600"> </th>
+                                    <th class="ff6600"></th>
+									<th class="fe4600"> </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class=""><div class="ff9900 mt6"></div></td>
+									<td class="ebebeb"><div class="fff6e7 mt6"></div></td>
+									<td class="ebebeb"><div class="ffffff mt6"></div></td>
+                                    <td class="ebebeb"><div class="fff6e7 mt6"></div></td>
+									<td class="ebebeb"><div class="ffffff mt6"></div></td>
+                                    <td class="ebebeb"><div class="fff6e7 mt6"></div></td>
+									<td class="ebebeb"><div class="ffffff mt6"></div></td>
+                                    <td class="ebebeb"><div class="fff6e7 mt6"></div></td>
+									<td class="ebebeb"><div class="ffffff mt6"></div></td>
+                                    <td class="ebebeb"><div class="fff6e7 mt6"></div></td>
+								</tr>
+                            </tbody>
+                      	</table>              
+                    </div>
+                    <p>*按已动人数占比排名</p>
+                </div>
+            </div>
+            <div class="swiper-slide pn">
+            	<img src="images/topImg.jpg" width="640" height="226"/>
+            </div>
+            <div class="swiper-slide pn p4">
+            	<div><img src="images/topImg.jpg" width="640" height="226"/></div>
+                <div><img src="images/p4title.jpg" width="640" height="43"/></div>
+                <div class="p4Cont">
+
+                	<img src="images/p4Content.jpg" width="640" height="2150"/>
+                
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div>-->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        <!--pagination: '.swiper-pagination',-->
+        <!--paginationClickable: true-->
+		loop: true,
+    });
+	/**var p4swiper = new Swiper('.p4', {
+		direction: 'vertical',
+        scrollbar: '.p4',
+        scrollbarHide: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        grabCursor: true
+    });
+	
+	/**var p4swiper = new Swiper('.p4Cont', {
+    direction: 'vertical',
+});
+var startScroll, touchStart, touchCurrent;
+p4swiper.slides.on('touchstart', function (e) {
+    startScroll = this.scrollTop;
+    touchStart = e.targetTouches[0].pageY;
+}, true);
+p4swiper.slides.on('touchmove', function (e) {
+    touchCurrent = e.targetTouches[0].pageY;
+    var touchesDiff = touchCurrent - touchStart;
+    var slide = this;
+    var onlyScrolling =
+            ( slide.scrollHeight > slide.offsetHeight ) && //allow only when slide is scrollable
+            (
+                ( touchesDiff < 0 && startScroll === 0 ) || //start from top edge to scroll bottom
+                ( touchesDiff > 0 && startScroll === ( slide.scrollHeight - slide.offsetHeight ) ) || //start from bottom edge to scroll top
+                ( startScroll > 0 && startScroll < ( slide.scrollHeight - slide.offsetHeight ) ) //start from the middle
+            );
+    if (onlyScrolling) {
+        e.stopPropagation();
+    }
+}, true);*/
+    </script>
+</body>
+</html>

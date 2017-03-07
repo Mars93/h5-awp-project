@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrapper { width:100%; min-width:1210px; height:599px; background:url("../images/topBg1.png") no-repeat center 64px; }
+
+/*===顶部通栏，开始=================================*/
+.wrapper .topNav { width:1210px; height:64px; margin:0 auto; }
+.wrapper .topNav a { color:#333333; font-size:14px; }
+.wrapper .topNav .pt14{ padding-top:14px; }
+.wrapper .topNav .pt18{ padding-top:18px; }
+.wrapper .topNav .txt { padding-top:29px; }
+.wrapper .topNav a:hover { text-decoration:underline; }
+.wrapper .topNav span { float:right; padding: 29px 18px 0px 18px;}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.page_header{
+    /*box-shadow: 0 0 4px rgba(0,0,0,.2);*/
+    z-index: 9999;
+    -webkit-transform: translateZ(0);
+}
+.page_header.firstHeader{
+    z-index: 4;
+    overflow: hidden;
+    cursor: pointer;
+}
+.page_header.secondHeader{
+    background-color: #000;
+    height: 0;
+    z-index: 3;
+    overflow: hidden;
+    transition:height 0.5s;
+    -moz-transition:height 0.5s; /* Firefox 4 */
+    -webkit-transition:height 0.5s; /* Safari and Chrome */
+    -o-transition:height 0.5s; /* Opera */
+}
+.page_header.secondHeader.open{
+    transition:height 0.5s;
+    -moz-transition:height 0.5s; /* Firefox 4 */
+    -webkit-transition:height 0.5s; /* Safari and Chrome */
+    -o-transition:height 0.5s; /* Opera */
+    height: 64px;
+}
+.wrapper .topNavBlack { /*height:64px; background-color:#000000;*/ }
+.wrapper .topNavBlack .topBlackNav { width:1210px; height:64px; margin:0 auto; }
+.wrapper .topNavBlack .topBlackNav a { color:#616161; font-size:14px; }
+.wrapper .topNavBlack .topBlackNav .pt14{ padding-top:14px; margin-right:42px; }
+.wrapper .topNavBlack .topBlackNav .pt18{ padding-top:18px; }
+.wrapper .topNavBlack .topBlackNav .txt { padding-top:29px; }
+.wrapper .topNavBlack .topBlackNav a:hover { color:#ffffff; text-decoration:underline; }
+.wrapper .topNavBlack .topBlackNav span { float:right; padding: 29px 18px 0px 18px; color:#ffffff;}
+.wrapper .topNavBlack .topBlackNav .seek { width:276px; height:28px; background:url("../images/seekBg2.png") no-repeat; margin: 22px 17px 0px 0px; }
+.wrapper .topNavBlack .topBlackNav .seekTxt { width:225px; height:28px; font-size:14px; margin:0px 0px 0px 16px; border:none; background:none; color:#616161; }
+.wrapper .topNavBlack .topBlackNav .seek .wh28 { width:28px; height:28px; }
+.wrapper .topNavBlack .topBlackNav .mg28 { padding-top:28px; margin-right:28px; }
+
+.wrapper .seek { width:549px; height:122px; margin:200px auto 0px; color:#ffffff;}
+.wrapper .seek p { font-size:30px; padding-left:23px; } 
+.wrapper .seek .seekTxt {  width:549px; height:44px; margin-top:24px; background:url("../images/seekBg1.png") no-repeat; }
+.wrapper .seek .seekTxtStyle { width:486px; height:41px; font-size:14px; margin:2px 0px 0px 20px; border:none; background:none;  line-height:28px; color:#ffffff; }
+.wrapper .seek .wh41 { width:41px; height:41px; }
+.wrapper .seek .hot { margin:10px 0px 0px 22px; }
+.wrapper .seek .hot a { color:#ffffff }
+.wrapper .seek .hot a:hover { text-decoration:underline; }
+
+
+/*===主内容，开始=================================*/
+.mainContent { width:1212px; height:100%; margin:0 auto; }
+.mainContent .subtitle{ margin-top:50px; }
+.mainContent .subtitle .wire_left{ width:523px; height:1px; border-top:1px solid #e3e3e3; margin-top:12px; }
+.mainContent .subtitle .wire_right{ width:523px; height:1px; border-top:1px solid #e3e3e3; margin-top:12px; }
+.mainContent .subtitle p { color:#e3e3e3; padding:0 10px; font-size:16px; }
+.mainContent .contentType{ width:730px; margin:50px auto 0px; }
+.mainContent .contentType a { width:75px; height:32px; text-align:center; padding-top:7px; font-size:14px;color:#616161; float:left }
+.mainContent .contentType a:hover { width:75px; height:32px; text-align:center; padding-top:7px; background:url("../images/pitchOn.png") no-repeat; font-size:14px;color:#ffffff; float:left }
+.mainContent .contentType .ahover { width:75px; height:32px; text-align:center; padding-top:7px; background:url("../images/pitchOn.png") no-repeat; font-size:14px;color:#ffffff; float:left }
+.mainContent .contentType span { padding:7px 15px 0px 15px;color:#616161; float:left }
+.mainContent .contentSonType{ 
+	display: none;
+	margin:0px auto 0px;
+	background-color: white;
+}
+.contentSonType ul{
+	padding: 15px;
+	-webkit-box-shadow: #666 0px 0px 10px;  
+   -moz-box-shadow: #666 0px 0px 10px;  
+   box-shadow: #666 0px 0px 10px;  
+   background: #ffffff;  
+	}
+.contentSonType li{
+    position: relative;
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    cursor: pointer;
+	border:1px solid #b6b6b6;
+	padding:5px 20px;
+}
+.contentSonType .select{
+    background-color: #f9644c;
+    color:white;
+}
+.type_1 .arrows_up{
+	width:21px; height:11px;
+	background:url("../images/arrows_up.png") no-repeat;
+	position: relative;
+    left:301px;
+	}
+	.type_2 .arrows_up{
+	width:21px; height:11px;
+	background:url("../images/arrows_up.png") no-repeat;
+	position: relative;
+    left:410px;
+	}
+	.type_3 .arrows_up{
+	width:21px; height:11px;
+	background:url("../images/arrows_up.png") no-repeat;
+	position: relative;
+    left:519px;
+	}
+	.type_4 .arrows_up{
+	width:21px; height:11px;
+	background:url("../images/arrows_up.png") no-repeat;
+	position: relative;
+    left:628px;
+	}
+	.type_5 .arrows_up{
+	width:21px; height:11px;
+	background:url("../images/arrows_up.png") no-repeat;
+	position: relative;
+    left:737px;
+	}
+	.type_6 .arrows_up{
+	width:21px; height:11px;
+	background:url("../images/arrows_up.png") no-repeat;
+	position: relative;
+    left:846px;
+	}
+.mainContent .recommend { margin-top:27px; }
+.mainContent .recommend .reco_left{ width:523px; height:1px; border-top:1px solid #e3e3e3; margin-top:12px; }
+.mainContent .recommend .reco_right{ width:523px; height:1px; border-top:1px solid #e3e3e3; margin-top:12px; }
+.mainContent .recommend p { color:#e3e3e3; padding:0 10px; font-size:16px; }
+.mainContent .content{ margin:50px auto 0px; }
+.mainContent .content .row { margin-bottom:25px; }
+.mainContent .content .row .element { width:404px; height:396px; background:url("../images/elementBg.png") no-repeat; float:left; }
+.mainContent .content .row .element img { margin:10px 0px 0px 13px; }
+.mainContent .content .row .element .gameName { margin:2px 26px 0px 32px;}
+.mainContent .content .row .element .gameName span { margin-top:10px; font-size:16px; color:#717171; }
+.mainContent .content .row .element .gameInfo { margin:18px 26px 0px 32px; }
+.mainContent .content .row .element .gameInfo p {color:#bebebe}
+.mainContent .content .row .element .gameInfo .pl { margin-right:5px}
+.mainContent .content .row .element .gameInfo .pr { margin-left:5px}
+.mainContent .noContent {
+	width:345px;
+	height: 53px;
+	background:url("../images/noContentBg.png") no-repeat;
+	margin:0px auto;
+}
+.mainContent .noContent p { font-size:16px; color:#7e7e7e; padding:17px 0px 0px 115px;}
+.returnTop { width:1280px; height:56px; margin:-56px; float:right; }
+.returnTop a {width:56px; height:56px; background:url("../images/top.png") no-repeat; overflow:hidden;}
+.returnTop a:hover {width:56px; height:56px; background:url("../images/topUp.png") no-repeat; overflow:hidden;}
+
+
+.footer { margin-top:36px; width:100%; min-width:1212px; height:256px; background-color:#201f24; }
+.footer .footerContent { width:1212px; padding-top:54px; margin:0 auto; }
+.footer .footerContent .fl1 { width:378px; }
+.footer .footerContent .fl1 .awp { margin-left: 13px; }
+.footer .footerContent .fl1 .awptxt{ margin:25px 0px 0px 13px; color:#ffffff; }
+.footer .footerContent .fl2 { margin:18px 0px 0px 0px; color:#c6c6c6; }
+.footer .footerContent a { color:#c6c6c6; }
+.footer .footerContent a:hover { text-decoration:underline; }
+.footer .footerContent .fl2 .awp1 { }
+.footer .footerContent .fl2 .awp2 { margin-left:46px; }
+.footer .footerContent .fl2 .awp3 { margin-left:46px; }
+.footer .footerContent .fl2 .awp4 { margin-left:46px; }
+.footer .footerContent .fl2 .iconLink { margin:20px 50px 0px 0px; }
+.footer .footerContent .fl2 .iconLink a img { margin-right:10px; }
+.footer .footerContent .list { color:#c6c6c6; margin:58px 0px 0px -45px; }
+.footer .footerContent .list li { padding-bottom:18px; }
+
+.bottom { width:100%; min-width:1212px; height:51px; background-color:#17161b; }
+.bottomTxt { width:800px; color:#c6c6c6;  padding-top:24px; margin:0 auto; }

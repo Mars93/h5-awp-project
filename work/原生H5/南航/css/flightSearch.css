@@ -1,0 +1,70 @@
+/*提示框*/
+.modelWindow{
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.2);
+}
+.dialog-container{
+    min-width: 260px;
+    max-width: 500px;
+    background:white;
+    border-radius:4px;
+    margin: auto;
+    width: 80%;
+}
+.dialog-title{
+    line-height:44px;
+    text-align:center;
+    color:#5a5959;
+    font-weight:bold;
+    font-size:16px;
+}
+.dialog-body{
+    color:#5a5959;
+    font-size:16px;
+    margin:0 20px 10px;
+    text-align:center;
+}
+.dialog-btnBar{
+    border-top:1px solid #dbdbdb;
+    white-space:nowrap;
+    text-align:center;
+    line-height:40px;
+    font-size:14px;
+    color:#1eb0e9;
+}
+.dialog-bb-btn{
+    box-sizing:border-box;
+    display:inline-block;
+    border-right:1px solid #dbdbdb;
+    font-weight: bold;
+}
+.dialog-bb-btn:last-of-type{
+    border-right:0;
+}
+[data-dialog-btnCount="1"] .dialog-bb-btn{
+    width: 100%;
+}
+[data-dialog-btnCount="2"] .dialog-bb-btn{
+    width: 50%;
+}
+[data-dialog-btnCount="3"] .dialog-bb-btn{
+    width: 33.3%;
+}
+[data-dialog-btnCount="4"] .dialog-bb-btn{
+    width: 25%;
+}
+.dialog-table{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.dialog-t-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
